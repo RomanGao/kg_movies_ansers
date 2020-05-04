@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container form {
+        margin: 150px 0;
+        margin-bottom: 10px;
+    }
+    .container .input_value .submit {
+        margin-top: 20px;
+
+    }
+    .container .quest {
+        width: 100%
+    }
+    .container .anser{
+        width: 500px;
+        height: 300px;
+    }
+    .container .quest{
+        width: 500px;
+        height: 50px;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body >
+    <div class="container">
+        <form class="input_value" action="/", method="post">
+            <label style="font-size:24px;Font: Georgia-Bold">电影问答系统</label>
+            <br>
+            <br>
+            <input class="quest" type="text", name="question", style="width: 80%;height: 30%;" value={{qt}}>
+            <!--<textarea  class="quest", name="question">{{vv}}</textarea>-->
+            <br>
+            <input class="submit" type="submit" value="提交">
+            <br>
+            <br>
+            <textarea  class="anser">{{val}}</textarea>
+        </form>
+    </div>
+</body>
+</html>

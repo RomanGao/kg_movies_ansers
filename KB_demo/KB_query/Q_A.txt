@@ -1,0 +1,13 @@
+question: 
+周星驰演过喜剧电影吗
+search:
+
+PREFIX : <http://www.kgdemo.com#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ASK {
+?s :personName '周星驰'.?s :hasActedIn ?m.?m :hasGenre ?g.?g :genreName '喜剧'.
+}
+anser:
+Yes
